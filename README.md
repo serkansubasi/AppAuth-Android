@@ -262,7 +262,7 @@ this redirect URI.
 
 We recommend using a custom scheme based redirect URI (i.e. those of form
 `my.scheme:/path`), as this is the most widely supported across all versions of
-Android. To avoid conflicts with other apps, it is recommended to configure a 
+Android. To avoid conflicts with other apps, it is recommended to configure a
 distinct scheme using "reverse domain name notation". This can either match
 your service web domain (in reverse) e.g. `com.example.service` or your package
 name `com.example.app` or be something completely new as long as it's distinct
@@ -286,7 +286,7 @@ AndroidManifest.xml:
 
 ```xml
 <activity
-        android:name="net.openid.appauth.RedirectUriReceiverActivity"
+        android:name="net.sbscon.appauth.RedirectUriReceiverActivity"
         tools:node="replace">
     <intent-filter>
         <action android:name="android.intent.action.VIEW"/>
@@ -302,7 +302,7 @@ approach (modifying your AndroidManifest.xml) is used:
 
 ```xml
 <activity
-        android:name="net.openid.appauth.RedirectUriReceiverActivity"
+        android:name="net.sbscon.appauth.RedirectUriReceiverActivity"
         tools:node="replace">
     <intent-filter>
         <action android:name="android.intent.action.VIEW"/>

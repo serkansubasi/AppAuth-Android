@@ -3,7 +3,7 @@ configurations {
 }
 
 dependencies {
-    mdDoclet 'org.jdrupes.mdoclet:doclet:1.0.10'
+    mdDoclet 'org.jdrupes.mdoclet:doclet:2.0.0'
 }
 
 task androidJavadoc(type: Javadoc) {
